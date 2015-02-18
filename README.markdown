@@ -1,30 +1,36 @@
-Make-symlink.app: an OSX GUI symlink droplet
-============================================
+Make-SymLink.app: an OSX droplet for creating Symbolic Links
+============================================================
 
-An OS X GUI symbolic link (symlink, unix alias) maker. Drag and drop files or
-directories onto this app, then nominate a destination directory to create a
-symlink.
+A GUI-based symbolic link (symlink, soft link, unix alias) maker for OS X 10.6+.
+
+While the Finder does not perceptibly differentiate between aliases and symbolic
+links (calling them both aliases), the underlying file system & operating
+system does denote the difference which is evident by its behavior.  Both
+aliases and symbolic links each have their own pros and cons making one of them
+more suited to certain applications. In general symbolic links are more
+universally compatible, and will be recognized by other operating systems and
+more apps within OS X.
+But aliases are more resilient to breaking and continue to work if you move the
+target. More detailed information is available online.
 
 Installation
 ------------
 
-Copy Make-symlink.app somewhere sensible (perhaps Library/Scripts in your home
-folder). From that folder in Finder.app, drag it into your finder toolbar.
+Copy Make-SymLink.app somewhere sensible (perhaps Library/Scripts or Applications
+in your home folder). From that folder in the Finder, drag the Make-SymLink.app
+icon onto the toolbar of the Finder window for convenient usage.
 
 Usage
 -----
 
-Drag the file or directory you want to symlink to (the target) onto the app
-icon. Change the source filename if you want the target filename to be
-different to the source. Select the target directory.  
-*fin*
+Drag the file or directory you want to link to (the source/target your link will
+point to) onto the the icon you placed in the toolbar.
+Enter a new filename if you would like your link to have a different name than
+the source/target.
+Select the folder where to create the link.
 
 Thanks to
 ---------
 
 * [rusto](http://forums.macosxhints.com/archive/index.php/t-3017.html) for the
   start.
-* [IconSeeker](http://iconseeker.com/) and an unknown icon contributor for the 
-  [icon](http://icons.iconseeker.com/icns/iphonica-system/alias-1.icns). The
-  URI suggests that "iphonica-system" may be our benefactor, but I can't work
-  out how to give proper credit through the iconseeker interface.
